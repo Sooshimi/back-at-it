@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=3 uid="uid://ckvn7y7g7bgu2"]
+
+[ext_resource type="Texture2D" uid="uid://cw4sn06fecmls" path="res://assets/dice/dice_plan.png" id="1_ud0hg"]
+
+[node name="Dice2" type="Node2D"]
+
+[node name="DiceBase" type="Sprite2D" parent="."]
+texture = ExtResource("1_ud0hg")
+
+[node name="Face1" type="Sprite2D" parent="DiceBase"]
+position = Vector2(-47, 0)
+region_enabled = true
+region_rect = Rect2(0, 0, 32, 32)
+
+[node name="Face2" type="Sprite2D" parent="DiceBase"]
+position = Vector2(-16, 0)
+region_enabled = true
+region_rect = Rect2(32, 0, 32, 32)
+
+[node name="Face3" type="Sprite2D" parent="DiceBase"]
+position = Vector2(15, 0)
+region_enabled = true
+region_rect = Rect2(64, 0, 32, 32)
+
+[node name="Face4" type="Sprite2D" parent="DiceBase"]
+
+[node name="Face5" type="Sprite2D" parent="DiceBase"]
+
+[node name="Face6" type="Sprite2D" parent="DiceBase"]

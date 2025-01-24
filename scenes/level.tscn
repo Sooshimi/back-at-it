@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6w0jq4gcs2ij"]
+
+[ext_resource type="PackedScene" uid="uid://cdfmdf2fc6pvw" path="res://scenes/dice1.tscn" id="1_3k6rt"]
+[ext_resource type="PackedScene" uid="uid://ckvn7y7g7bgu2" path="res://scenes/dice2.tscn" id="2_768gg"]
+
+[node name="Level" type="Node2D"]
+position = Vector2(2, 0)
+
+[node name="Dice1" parent="." instance=ExtResource("1_3k6rt")]
+position = Vector2(191, 93)
+
+[node name="Dice2" parent="." instance=ExtResource("2_768gg")]
+position = Vector2(340, 93)
