@@ -1,7 +1,12 @@
-[gd_scene load_steps=3 format=3 uid="uid://c6w0jq4gcs2ij"]
+[gd_scene load_steps=8 format=3 uid="uid://c6w0jq4gcs2ij"]
 
-[ext_resource type="PackedScene" uid="uid://cdfmdf2fc6pvw" path="res://scenes/dice1.tscn" id="1_3k6rt"]
-[ext_resource type="PackedScene" uid="uid://ckvn7y7g7bgu2" path="res://scenes/dice2.tscn" id="2_768gg"]
+[ext_resource type="PackedScene" uid="uid://cdfmdf2fc6pvw" path="res://scenes/dice/dice1.tscn" id="1_3k6rt"]
+[ext_resource type="PackedScene" uid="uid://507lb5kvy4jx" path="res://scenes/dice/faces/1_mult_face.tscn" id="2_rncne"]
+[ext_resource type="PackedScene" uid="uid://cdm0y4knm7xje" path="res://scenes/dice/faces/2_mult_face.tscn" id="3_r20uj"]
+[ext_resource type="PackedScene" uid="uid://drir21wr5w8rs" path="res://scenes/dice/faces/attack_face.tscn" id="4_3whrq"]
+[ext_resource type="PackedScene" uid="uid://cnh8iayctjldv" path="res://scenes/dice/faces/heal_face.tscn" id="5_vd1yj"]
+[ext_resource type="PackedScene" uid="uid://xkehhfvauaur" path="res://scenes/dice/faces/reroll_face.tscn" id="6_2nqnx"]
+[ext_resource type="PackedScene" uid="uid://b0gunkv6sdefa" path="res://scenes/dice/faces/shield_face.tscn" id="7_70hl5"]
 
 [node name="Level" type="Node2D"]
 position = Vector2(2, 0)
@@ -9,5 +14,20 @@ position = Vector2(2, 0)
 [node name="Dice1" parent="." instance=ExtResource("1_3k6rt")]
 position = Vector2(191, 93)
 
-[node name="Dice2" parent="." instance=ExtResource("2_768gg")]
-position = Vector2(340, 93)
+[node name="1MultFace" parent="." instance=ExtResource("2_rncne")]
+position = Vector2(258, 220)
+
+[node name="2MultFace" parent="." instance=ExtResource("3_r20uj")]
+position = Vector2(307, 221)
+
+[node name="AttackFace" parent="." instance=ExtResource("4_3whrq")]
+position = Vector2(71, 219)
+
+[node name="HealFace" parent="." instance=ExtResource("5_vd1yj")]
+position = Vector2(164, 222)
+
+[node name="RerollFace" parent="." instance=ExtResource("6_2nqnx")]
+position = Vector2(210, 220)
+
+[node name="ShieldFace" parent="." instance=ExtResource("7_70hl5")]
+position = Vector2(117, 218)

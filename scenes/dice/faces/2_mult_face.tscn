@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cdm0y4knm7xje"]
+
+[ext_resource type="Texture2D" uid="uid://bupwpgmy5nuyg" path="res://assets/dice/dice_faces.png" id="1_3ne18"]
+
+[node name="2MultFace" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_3ne18")
+region_enabled = true
+region_rect = Rect2(32, 64, 32, 32)
