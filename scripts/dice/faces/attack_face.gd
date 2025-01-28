@@ -6,7 +6,7 @@ var body_ref
 var offset: Vector2
 var initial_pos: Vector2
 
-func _process(delta):
+func _process(_delta):
 	if draggable:
 		if Input.is_action_just_pressed("left_click"):
 			initial_pos = global_position

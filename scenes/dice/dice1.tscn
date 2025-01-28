@@ -10,3 +10,18 @@ texture = ExtResource("1_53hfn")
 
 [node name="DroppableFace" parent="." instance=ExtResource("1_87u1t")]
 position = Vector2(-49, 0)
+
+[node name="DroppableFace2" parent="." instance=ExtResource("1_87u1t")]
+position = Vector2(-18, 0)
+
+[node name="DroppableFace3" parent="." instance=ExtResource("1_87u1t")]
+position = Vector2(-18, -31)
+
+[node name="DroppableFace4" parent="." instance=ExtResource("1_87u1t")]
+position = Vector2(-18, 31)
+
+[node name="DroppableFace5" parent="." instance=ExtResource("1_87u1t")]
+position = Vector2(13, 0)
+
+[node name="DroppableFace6" parent="." instance=ExtResource("1_87u1t")]
+position = Vector2(44, 0)
