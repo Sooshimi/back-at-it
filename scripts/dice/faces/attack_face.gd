@@ -8,14 +8,18 @@ var initial_pos: Vector2
 
 func _process(_delta):
 	if draggable:
+		# Player clicks on card
 		if Input.is_action_just_pressed("left_click"):
 			initial_pos = global_position
+			# offset created so the card doesn't 'snap' to the mouse cursor
 			offset = get_global_mouse_position() - global_position
 			Global.is_dragging = true
+		# Player dragging card
 		if Input.is_action_pressed("left_click"):
 			global_position = get_global_mouse_position() - offset
 		elif Input.is_action_just_released("left_click"):
 			Global.is_dragging = false
+			# Create tween (a gradual transition) to smoothly animate card movement
 			var tween = get_tree().create_tween()
 			if is_inside_droppable:
 				tween.tween_property(self, "position", body_ref.global_position, 0.2).set_ease(Tween.EASE_OUT)
