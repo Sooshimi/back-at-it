@@ -30,7 +30,6 @@ func _on_area_2d_mouse_entered():
 func _on_area_2d_mouse_exited():
 	if not Global.is_dragging:
 		draggable = false
-		print("draggable")
 		scale = Vector2(1, 1)
 
 func _on_area_2d_body_entered(body: StaticBody2D):
