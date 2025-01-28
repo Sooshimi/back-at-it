@@ -9,4 +9,4 @@
 texture = ExtResource("1_53hfn")
 
 [node name="DroppableFace" parent="." instance=ExtResource("1_87u1t")]
-position = Vector2(-48, 0)
+position = Vector2(-49, 0)

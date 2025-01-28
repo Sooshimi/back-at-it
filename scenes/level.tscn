@@ -21,7 +21,7 @@ position = Vector2(258, 220)
 position = Vector2(307, 221)
 
 [node name="AttackFace" parent="." instance=ExtResource("4_3whrq")]
-position = Vector2(44, 200)
+position = Vector2(72, 218)
 
 [node name="HealFace" parent="." instance=ExtResource("5_vd1yj")]
 position = Vector2(164, 222)
