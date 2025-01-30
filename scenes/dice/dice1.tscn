@@ -8,7 +8,7 @@
 [node name="DiceBase" type="Sprite2D" parent="."]
 texture = ExtResource("1_53hfn")
 
-[node name="DroppableFace" parent="." instance=ExtResource("1_87u1t")]
+[node name="DroppableFace1" parent="." instance=ExtResource("1_87u1t")]
 position = Vector2(-49, 0)
 
 [node name="DroppableFace2" parent="." instance=ExtResource("1_87u1t")]
