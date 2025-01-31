@@ -3,9 +3,10 @@ extends Node2D
 
 var draggable: bool = false
 var is_inside_droppable: bool = false
-var body_ref: StaticBody2D
+var droppable_face: StaticBody2D
 var offset: Vector2
 var initial_pos: Vector2
+@onready var dropped_face = $"."
 
 func _process(_delta: float) -> void:
 	if draggable:
@@ -23,7 +24,7 @@ func _process(_delta: float) -> void:
 			# Create tween (a gradual transition) to smoothly animate card movement
 			var tween = get_tree().create_tween()
 			if is_inside_droppable:
-				tween.tween_property(self, "position", body_ref.global_position, 0.2).set_ease(Tween.EASE_OUT)
+				tween.tween_property(self, "position", droppable_face.global_position, 0.2).set_ease(Tween.EASE_OUT)
 			else:
 				tween.tween_property(self, "global_position", initial_pos, 0.2).set_ease(Tween.EASE_OUT)
 
@@ -41,9 +42,11 @@ func _on_area_2d_body_entered(body: StaticBody2D) -> void:
 	if body.is_in_group('droppable'):
 		is_inside_droppable = true
 		body.modulate = Color(Color.REBECCA_PURPLE, 1)
-		body_ref = body
+		droppable_face = body
+		droppable_face.face_type = dropped_face.face_type
 
 func _on_area_2d_body_exited(body: StaticBody2D) -> void:
-	if body.is_in_group("droppable") && body_ref == body:
+	if body.is_in_group("droppable") && droppable_face == body:
 		is_inside_droppable = false
 		body.modulate = Color(Color.MEDIUM_PURPLE, 0.7)
+		droppable_face.face_type = ""

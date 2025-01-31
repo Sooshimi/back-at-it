@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://cdfmdf2fc6pvw"]
+[gd_scene load_steps=4 format=3 uid="uid://cdfmdf2fc6pvw"]
 
+[ext_resource type="Script" path="res://scripts/dice/dice_1/dice_1.gd" id="1_6iavn"]
 [ext_resource type="Texture2D" uid="uid://cw4sn06fecmls" path="res://assets/dice/dice_plan.png" id="1_53hfn"]
 [ext_resource type="PackedScene" uid="uid://duhvky36wcgju" path="res://scenes/dice/droppable_face.tscn" id="1_87u1t"]
 
 [node name="Dice1" type="Node2D"]
+script = ExtResource("1_6iavn")
 
 [node name="DiceBase" type="Sprite2D" parent="."]
 texture = ExtResource("1_53hfn")

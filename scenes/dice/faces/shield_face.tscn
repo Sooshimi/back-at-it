@@ -1,13 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://caxpqd446hjnf"]
+[gd_scene load_steps=4 format=3 uid="uid://c148ly6vhjvso"]
 
 [ext_resource type="Texture2D" uid="uid://bupwpgmy5nuyg" path="res://assets/dice/dice_faces.png" id="1_v7xwj"]
-[ext_resource type="Script" path="res://scripts/dice/faces/attack_face.gd" id="1_wuo70"]
+[ext_resource type="Script" path="res://scripts/dice/faces/shield_face.gd" id="1_wfu31"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b6hov"]
 size = Vector2(32, 32)
 
 [node name="ShieldFace" type="Node2D"]
-script = ExtResource("1_wuo70")
+script = ExtResource("1_wfu31")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_v7xwj")

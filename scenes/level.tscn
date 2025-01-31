@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://cdfmdf2fc6pvw" path="res://scenes/dice/dice1.tscn" id="1_3k6rt"]
 [ext_resource type="PackedScene" uid="uid://drir21wr5w8rs" path="res://scenes/dice/faces/attack_face.tscn" id="4_3whrq"]
-[ext_resource type="PackedScene" uid="uid://caxpqd446hjnf" path="res://scenes/dice/faces/shield_face.tscn" id="7_70hl5"]
+[ext_resource type="PackedScene" uid="uid://c148ly6vhjvso" path="res://scenes/dice/faces/shield_face.tscn" id="7_70hl5"]
 
 [node name="Level" type="Node2D"]
 position = Vector2(2, 0)

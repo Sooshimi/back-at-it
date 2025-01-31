@@ -1,7 +1,9 @@
 extends StaticBody2D
 
+var face_type: String = "none"
+
 func _ready() -> void:
-	modulate = Color(Color.MEDIUM_PURPLE, 0.7)
+	pass
 
 func _process(_delta: float) -> void:
 	pass
