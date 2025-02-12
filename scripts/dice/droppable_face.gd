@@ -1,6 +1,6 @@
 extends StaticBody2D
 
-var face_type: String = "none"
+var face_type: String = ""
 
 func _ready() -> void:
 	pass
