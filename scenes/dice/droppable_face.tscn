@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://duhvky36wcgju"]
 
-[ext_resource type="Script" path="res://scripts/dice/droppable_face.gd" id="1_x0pv2"]
+[ext_resource type="Script" uid="uid://busc7p6w4duu4" path="res://scripts/dice/droppable_face.gd" id="1_x0pv2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_euj4c"]
 size = Vector2(30, 30)

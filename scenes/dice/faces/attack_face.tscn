@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://drir21wr5w8rs"]
 
 [ext_resource type="Texture2D" uid="uid://bupwpgmy5nuyg" path="res://assets/dice/dice_faces.png" id="1_i2dd2"]
-[ext_resource type="Script" path="res://scripts/dice/faces/attack_face.gd" id="1_opglu"]
+[ext_resource type="Script" uid="uid://dodgotxl75lpd" path="res://scripts/dice/faces/attack_face.gd" id="1_opglu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b6hov"]
 size = Vector2(32, 32)
